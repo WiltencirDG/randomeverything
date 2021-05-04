@@ -32,6 +32,7 @@ export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(vscode.commands.registerCommand('randomeverything.word', insertRandomWord));
     context.subscriptions.push(vscode.commands.registerCommand('randomeverything.text', insertRandomText));
     context.subscriptions.push(vscode.commands.registerCommand('randomeverything.date', insertRandomDate));
+    context.subscriptions.push(vscode.commands.registerCommand('randomeverything.cpf', insertRandomCPF));
     context.subscriptions.push(vscode.commands.registerCommand('randomeverything.firstName', insertRandomFirstName));
     context.subscriptions.push(vscode.commands.registerCommand('randomeverything.lastName', insertRandomLastName));
     context.subscriptions.push(vscode.commands.registerCommand('randomeverything.fullName', insertRandomFullName));
@@ -114,6 +115,10 @@ function insertRandomText(): void {
 
 function insertRandomDate(): void {
     processSelection(randomDate, []);
+}
+
+function insertRandomCPF(): void {
+    processSelection(randomCPF, []);
 }
 
 function insertRandomFirstName(): void {
@@ -215,6 +220,13 @@ function randomText(): string{
 function randomDate(): string{
     var chance = require('chance').Chance();
     var randomVar:string = chance.date({string: true});
+
+    return randomVar;
+}
+
+function randomCPF(): string{
+    var chance = require('chance').Chance();
+    var randomVar:string = chance.cpf();
 
     return randomVar;
 }
