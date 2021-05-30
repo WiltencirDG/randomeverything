@@ -28,6 +28,7 @@ Type "random":
 - `Random: Text` - Picks 24 random words
 - `Random: Date` - Picks a random ISO-8601 Date
 - `Random: CPF` - Generates a random brazilian CPF
+- `Random: CNPJ` - Generates a random brazilian CNPJ
 - `Random: First name` - Picks a random first name
 - `Random: Last name` - Picks a random last name
 - `Random: Full name` - Picks a random full names

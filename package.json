@@ -39,6 +39,7 @@
     "onCommand:randomeverything.text",
     "onCommand:randomeverything.date",
     "onCommand:randomeverything.cpf",
+    "onCommand:randomeverything.cnpj",
     "onCommand:randomeverything.firstName",
     "onCommand:randomeverything.lastName",
     "onCommand:randomeverything.fullName",
@@ -107,6 +108,11 @@
         "command": "randomeverything.cpf",
         "title": "Random: CPF",
         "description": "Generates a random brazilian CPF"
+      },
+      {
+        "command": "randomeverything.cnpj",
+        "title": "Random: CNPJ",
+        "description": "Generates a random brazilian CNPJ"
       },
       {
         "command": "randomeverything.firstName",
